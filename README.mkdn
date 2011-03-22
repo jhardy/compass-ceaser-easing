@@ -1,4 +1,4 @@
-Compass Ceaser CSS Eeasing Transitions
+Compass Ceaser CSS Easing Transitions
 ======================================
 
 An compass extension based on [ceasar css easing animation tool](http://matthewlein.com/ceaser/) by [@matthewlein](http://twitter.com/matthewlein)
@@ -35,10 +35,10 @@ Adding Sassy Buttons to an exiting project:
 
 
 
-Using Ceaser Eeasing
+Using Ceaser Easing
 ===================
 
-The ceaser easing extension provides a mixin called ceaser. You pass what type of easing you would like to the mixin and it will apply the correct cubic-bezier transition timing function for you. You can then pass the transition property (defaults to all), the transiton duration (defautlts to 500ms), and the transition delay (defaults to 0).
+The ceaser easing extension provides a mixin called ceaser. You pass what type of easing you would like to the mixin and it will apply the correct cubic-bezier transition timing function for you. You can then pass the transition property (defaults to all), the transition duration (defaults to 500ms), and the transition delay (defaults to 0).
  
 The ceaser easing mixin
 -----------------------
@@ -49,7 +49,7 @@ The ceaser easing mixin
     # Example mixin call that will create a 3 second transition with the ease type of ease-in
     @include ceaser(ease-in, all, 3s)
     
-    # Example mixin call that will create a 500 millisecon transition on only the width property with a delay of 1 second
+    # Example mixin call that will create a 500 milliseconds transition on only the width property with a delay of 1 second
     @include ceaser(easeInOutExpo, width, 500ms, 1s)
     
 
