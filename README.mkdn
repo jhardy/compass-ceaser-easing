@@ -28,7 +28,7 @@ Adding Sassy Buttons to an exiting project:
     # From the command line:
     compass install ceaser-easing
     
-    #import sassy buttons into your sass/scss file
+    #import ceaser-easing into your sass/scss file
     @import "ceaser-easing"
     
 
