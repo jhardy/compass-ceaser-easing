@@ -1,3 +1,5 @@
+stylesheet '_ceaser.sass', :media => 'screen, projection'
+
 description "a css transition implementation of the Penner equations based on @matthewlein css conversions for compass."
 
 help %Q{
