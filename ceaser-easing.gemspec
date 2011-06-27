@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.1.5"
-  s.date = "2011-03-22"
+  s.version = "0.2"
+  s.date = "2011-06-26"
 
   # Gem Details
   s.name = "ceaser-easing"
