@@ -42,7 +42,6 @@ The ceaser easing extension provides a sass function called ceaser. You use the 
 The ceaser easing function
 -----------------------
     
-    As an example, here is how create the above transition for an html element with id of box.  
     
     #transition {
       transition-property: all;
@@ -103,11 +102,7 @@ Here is a list of all the available easing types to choose from, you can see an 
 	easeInOutCirc  
                     
    
-   
-
-
-
-
+ 
 The ceaser easing mixin
 -----------------------
 
