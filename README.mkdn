@@ -10,9 +10,20 @@ Installation
 
 Install gem from the command line:
 
-    sudo gem install ceaser-easing
+    (sudo) gem install ceaser-easing
+    
+Adding Ceaser Easing to an exiting project:
 
-Create a new project using Sassy Buttons
+    # Edit the project configuration file and add:
+    require 'ceaser-easing'
+
+    # From the command line:
+    compass install ceaser-easing
+
+    #import ceaser-easing into your sass/scss file
+    @import "ceaser-easing"
+
+Create a new project using Ceaser Easing
 
     compass create project_name -r ceaser-easing --using ceaser-easing
     
@@ -20,20 +31,6 @@ Create a new project using Sassy Buttons
     @import "ceaser-easing"
 
     
-Adding Sassy Buttons to an exiting project:
-    
-    # Edit the project configuration file and add:
-    require 'ceaser-easing'
-    
-    # From the command line:
-    compass install ceaser-easing
-    
-    #import ceaser-easing into your sass/scss file
-    @import "ceaser-easing"
-    
-
-
-
 
 Using Ceaser Easing
 ===================
