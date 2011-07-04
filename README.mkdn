@@ -38,30 +38,36 @@ Adding Sassy Buttons to an exiting project:
 Using Ceaser Easing
 ===================
 
-The ceaser easing extension provides a mixin called ceaser. You pass what type of easing you would like to the mixin and it will apply the correct cubic-bezier transition timing function for you. You can then pass the transition property (defaults to all), the transition duration (defaults to 500ms), and the transition delay (defaults to 0).
+
+The ceaser easing extension provides a sass function called ceaser. You use the function as a value for a transition or animation timing-function property. You pass what type of easing you would like to the function and it will apply the correct cubic-bezier transition timing function for you.
+
  
-The ceaser easing mixin
+The ceaser easing function
 -----------------------
     
-    # The ceaser easing mixin with its argument descriptions
-    @mixin ceaser(ease type, transition property, duration, delay)
+    As an example, here is how create the above transition for an html element with id of box.  
     
-    # Example mixin call that will create a 3 second transition with the ease type of ease-in
-    @include ceaser(ease-in, all, 3s)
-    
-    # Example mixin call that will create a 500 milliseconds transition on only the width property with a delay of 1 second
-    @include ceaser(easeInOutExpo, width, 500ms, 1s)
-    
-
-As an example, here is how create the above transition for an html element with id of box.  
-    
-    #box {
-        width: 500px;
-        @include ceaser(easeInOutExpo, width, 500ms, 1s); 
+    #transition {
+      transition-property: all;
+      transition-duration: 1.2s;
+      transition-timing-function: ceaser("ease-in");
     }
     
-    #box:hover {
-        width: 700px;
+    #transition-shorthand {
+      transition: all 1.2s ceaser("ease-in");
+    }
+
+
+    #animation {
+      animation-name: animateMe;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+      animation-timing-function: ceaser("easeInSine");
+    }
+    
+    #animation-shorthand {
+      animation: animateMe 10s ceaser("easeInSine") infinite
+      
     }
     
     
@@ -100,5 +106,36 @@ Here is a list of all the available easing types to choose from, you can see an 
 	easeInOutCirc  
                     
    
+   
+
+
+
+
+The ceaser easing mixin
+-----------------------
+
+The ceaser easing extension provides a mixin called ceaser. You pass what type of easing you would like to the mixin and it will apply the correct cubic-bezier transition timing function for you. You can then pass the transition property (defaults to all), the transition duration (defaults to 500ms), and the transition delay (defaults to 0).
+
+    # The ceaser easing mixin with its argument descriptions
+    @mixin ceaser(ease type, transition property, duration, delay)
+
+    # Example mixin call that will create a 3 second transition with the ease type of ease-in
+    @include ceaser(ease-in, all, 3s)
+
+    # Example mixin call that will create a 500 milliseconds transition on only the width property with a delay of 1 second
+    @include ceaser(easeInOutExpo, width, 500ms, 1s)
+
+
+As an example, here is how create the above transition for an html element with id of box.  
+
+    #box {
+        width: 500px;
+        @include ceaser(easeInOutExpo, width, 500ms, 1s); 
+    }
+
+    #box:hover {
+        width: 700px;
+    }
+
     
     
