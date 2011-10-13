@@ -71,38 +71,38 @@ Ease Types
 ----------
 Here is a list of all the available easing types to choose from, you can see an example of each on the original [demo page](http://matthewlein.com/ceaser/)
 
-  linear
-  ease (default)
-  ease-in
-  ease-out
-  ease-in-out
+	  linear
+	  ease (default)
+	  ease-in
+	  ease-out
+	  ease-in-out
 
-  easeInQuad
-  easeInCubic
-  easeInQuart
-  easeInQuint
-  easeInSine
-  easeInExpo
-  easeInCirc
-  easeInBack
+	  easeInQuad
+	  easeInCubic
+	  easeInQuart
+	  easeInQuint
+	  easeInSine
+	  easeInExpo
+	  easeInCirc
+	  easeInBack
 
-  easeOutQuad
-  easeOutCubic
-  easeOutQuart
-  easeOutQuint
-  easeOutSine
-  easeOutExpo
-  easeOutCirc
-  easeOutBack
+	  easeOutQuad
+	  easeOutCubic
+	  easeOutQuart
+	  easeOutQuint
+	  easeOutSine
+	  easeOutExpo
+	  easeOutCirc
+	  easeOutBack
 
-  easeInOutQuad
-  easeInOutCubic
-  easeInOutQuart
-  easeInOutQuint
-  easeInOutSine
-  easeInOutExpo
-  easeInOutCirc
-  easeInOutBack
+	  easeInOutQuad
+	  easeInOutCubic
+	  easeInOutQuart
+	  easeInOutQuint
+	  easeInOutSine
+	  easeInOutExpo
+	  easeInOutCirc
+	  easeInOutBack
 
 
 
