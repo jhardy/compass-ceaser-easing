@@ -25,6 +25,8 @@
     $easingValue: "0.950, 0.050, 0.795, 0.035"
   @else if $type ==  "easeInCirc"
     $easingValue: "0.600, 0.040, 0.980, 0.335"
+  @else if $type ==  "easeInBack"
+    $easingValue: "0.600, -0.280, 0.735, 0.045"
 
 
 
@@ -42,6 +44,8 @@
     $easingValue: "0.190, 1.000, 0.220, 1.000"
   @else if $type ==  "easeOutCirc"
     $easingValue: "0.075, 0.820, 0.165, 1.000"
+  @else if $type ==  "easeOutBack"
+    $easingValue: "0.175, 0.885, 0.320, 1.275"
 
 
 
@@ -59,5 +63,7 @@
     $easingValue: "1.000, 0.000, 0.000, 1.000"
   @else if $type ==  "easeInOutCirc"
     $easingValue: "0.785, 0.135, 0.150, 0.860"
+  @else if $type ==  "easeInOutBack"
+    $easingValue: "0.680, -0.550, 0.265, 1.550"
 
   @return $easingValue
