@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.3"
-  s.date = "2011-10-13"
+  s.version = "0.4"
+  s.date = "2012-04-13"
 
   # Gem Details
   s.name = "ceaser-easing"
@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   # Gem Bookkeeping
   s.has_rdoc = false
   s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 0.11"])
+  s.add_dependency("compass", [">= 0.12"])
 end
 
