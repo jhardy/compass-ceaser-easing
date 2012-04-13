@@ -9,5 +9,5 @@
 
 @mixin ceaser-transition($type: "ease", $properties: all, $duration: 500ms, $delay: 0)
   $easingValue : returnEaseType($type)
-  @include transition($properties, $duration, cubic-bezier(unquote($easingValue)), $delay)
+  @include transition($properties $duration cubic-bezier(unquote($easingValue)) $delay)
 
