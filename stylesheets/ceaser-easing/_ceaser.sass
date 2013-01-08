@@ -2,7 +2,7 @@
 @import "ease-types"
 @import "easing-vars"
 
-$legacy: false !default
+$ceaser-legacy: false !default
 
 @function ceaser($type: $ease)
   @if $legacy
@@ -11,17 +11,10 @@ $legacy: false !default
   @else
     @return cubic-bezier(unquote($type))
 
-<<<<<<< HEAD
-
-@mixin ceaser-transition($type: "ease", $properties: all, $duration: 500ms, $delay: 0ms)
-  $easingValue : returnEaseType($type)
-  @include transition($properties $duration cubic-bezier(unquote($easingValue)) $delay)
-=======
 @mixin ceaser-transition($type: $ease, $properties: all, $duration: 500ms, $delay: 0ms)
   @if $legacy
     $easingValue : returnEaseType($type)
     @include transition($properties $duration cubic-bezier(unquote($easingValue)) $delay)
   @else
     @include transition($properties $duration cubic-bezier(unquote($type)) $delay)
->>>>>>> use_bundler
 
