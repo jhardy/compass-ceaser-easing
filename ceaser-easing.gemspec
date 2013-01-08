@@ -1,25 +1,18 @@
-Gem::Specification.new do |s|
-  # Release Specific Information
-  s.version = "0.4"
-  s.date = "2012-04-13"
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/compass-ceaser-easing/version', __FILE__)
 
-  # Gem Details
-  s.name = "ceaser-easing"
-  s.authors = ["Jared Hardy"]
-  s.summary = %q{a css transition implementation of the Penner equations based on @matthewlein css conversions for compass}
-  s.description = %q{a css transition implementation of the Penner equations based on @matthewlein css conversions for compass}
-  s.email = "jared@jaredhardy.com"
-  s.homepage = "http://www.jaredhardy.com/"
+Gem::Specification.new do |gem|
+  gem.authors       = ["Jared Hardy"]
+  gem.email         = ["jared@jaredhardy.com"]
+  gem.description   = %q{a css transition implementation of the Penner equations based on @matthewlein css conversions for compass}
+  gem.summary       = %q{a css transition implementation of the Penner equations based on @matthewlein css conversions for compass}
+  gem.homepage      = "https://github.com/jhardy/compass-ceaser-easing"
 
-  # Gem Files
-  s.files = %w(README.mkdn)
-  s.files += Dir.glob("lib/**/*.*")
-  s.files += Dir.glob("stylesheets/**/*.*")
-  s.files += Dir.glob("templates/**/*.*")
-
-  # Gem Bookkeeping
-  s.has_rdoc = false
-  s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 0.12"])
+  gem.files         = `git ls-files`.split($\)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.name          = "compass-ceaser-easing"
+  gem.require_paths = ["lib"]
+  gem.version       = CeaserEasing::VERSION
+  gem.add_dependency("compass", [">= 0.12.2"])
 end
-
