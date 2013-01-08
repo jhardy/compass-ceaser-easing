@@ -10,22 +10,19 @@ Installation
 
 Install gem from the command line:
 
-    (sudo) gem install ceaser-easing
+    gem install ceaser-easing
 
-Adding Ceaser Easing to an exiting project:
+Adding Ceaser Easing to an existing project:
 
     # Edit the project configuration file and add:
     require 'ceaser-easing'
-
-    # From the command line:
-    compass install ceaser-easing
 
     #import ceaser-easing into your sass/scss file
     @import "ceaser-easing"
 
 Create a new project using Ceaser Easing
 
-    compass create project_name -r ceaser-easing --using ceaser-easing
+    compass create project_name -r ceaser-easing -u ceaser-easing
 
     #import ceaser-easing into your sass/scss file
     @import "ceaser-easing"
@@ -71,38 +68,38 @@ Ease Types
 ----------
 Here is a list of all the available easing types to choose from, you can see an example of each on the original [demo page](http://matthewlein.com/ceaser/)
 
-	  linear
-	  ease (default)
-	  ease-in
-	  ease-out
-	  ease-in-out
+    linear
+    ease (default)
+    ease-in
+    ease-out
+    ease-in-out
 
-	  easeInQuad
-	  easeInCubic
-	  easeInQuart
-	  easeInQuint
-	  easeInSine
-	  easeInExpo
-	  easeInCirc
-	  easeInBack
+    easeInQuad
+    easeInCubic
+    easeInQuart
+    easeInQuint
+    easeInSine
+    easeInExpo
+    easeInCirc
+    easeInBack
 
-	  easeOutQuad
-	  easeOutCubic
-	  easeOutQuart
-	  easeOutQuint
-	  easeOutSine
-	  easeOutExpo
-	  easeOutCirc
-	  easeOutBack
+    easeOutQuad
+    easeOutCubic
+    easeOutQuart
+    easeOutQuint
+    easeOutSine
+    easeOutExpo
+    easeOutCirc
+    easeOutBack
 
-	  easeInOutQuad
-	  easeInOutCubic
-	  easeInOutQuart
-	  easeInOutQuint
-	  easeInOutSine
-	  easeInOutExpo
-	  easeInOutCirc
-	  easeInOutBack
+    easeInOutQuad
+    easeInOutCubic
+    easeInOutQuart
+    easeInOutQuint
+    easeInOutSine
+    easeInOutExpo
+    easeInOutCirc
+    easeInOutBack
 
 
 
