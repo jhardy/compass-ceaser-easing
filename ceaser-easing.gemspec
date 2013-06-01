@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = CeaserEasing::VERSION
   gem.add_dependency("compass", [">= 0.12.2"])
+  gem.add_dependency("rake")
 end
