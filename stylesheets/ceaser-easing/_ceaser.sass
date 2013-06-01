@@ -11,10 +11,9 @@ $ceaser-legacy: false !default
   @else
     @return cubic-bezier(unquote($type))
 
-@mixin ceaser-transition($type: $ease, $properties: all, $duration: 500ms, $delay: 0ms)
+@mixin ceaser-transition($properties: all, $duration: 500ms, $type: $ease, $delay: 0ms)
   @if $ceaser-legacy
     $easingValue : returnEaseType($type)
     @include transition($properties $duration cubic-bezier(unquote($easingValue)) $delay)
   @else
     @include transition($properties $duration cubic-bezier(unquote($type)) $delay)
-
