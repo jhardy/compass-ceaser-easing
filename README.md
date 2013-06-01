@@ -109,20 +109,20 @@ The ceaser easing mixin
 The ceaser easing extension provides a mixin called ceaser. You pass what type of easing you would like to the mixin and it will apply the correct cubic-bezier transition timing function for you. You can then pass the transition property (defaults to all), the transition duration (defaults to 500ms), and the transition delay (defaults to 0).
 
     # The ceaser easing mixin with its argument descriptions
-    @mixin ceaser-transition(ease type, transition property, duration, delay)
+    @mixin ceaser-transition(transition property, duration, ease type, delay)
 
     # Example mixin call that will create a 3 second transition with the ease type of ease-in
-    @include ceaser-transition($ease-in, all, 3s)
+    @include ceaser-transition(all, 3s, $ease-in)
 
     # Example mixin call that will create a 500 milliseconds transition on only the width property with a delay of 1 second
-    @include ceaser-transition($easeInOutExpo, width, 500ms, 1s)
+    @include ceaser-transition(width, 500ms, $easeInOutExpo, 1s)
 
 
 As an example, here is how create the above transition for an html element with id of box.
 
     #box {
         width: 500px;
-        @include ceaser-transition($easeInOutExpo, width, 500ms, 1s);
+        @include ceaser-transition(width, 500ms, $easeInOutExpo, 1s);
     }
 
     #box:hover {
