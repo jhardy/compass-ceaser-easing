@@ -99,7 +99,7 @@ Here is a list of all the available easing types to choose from, you can see an 
     $easeInOutSine
     $easeInOutExpo
     $easeInOutCirc
-    easeInOutBack
+    $easeInOutBack
 
 
 
