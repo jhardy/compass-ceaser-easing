@@ -1,5 +1,5 @@
 {
   "name": "Ceaser Easing",
   "tags": ["transitions", "easing", "animations"],
-  "description" : "Awesome transitions for you to use"
+  "description" : "Shortcuts for different easing equations to use in css transitons and animations."
 }
