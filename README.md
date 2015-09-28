@@ -1,7 +1,7 @@
 Compass Ceaser CSS Easing Transitions
 ======================================
 
-A compass extension based on [ceasar css easing animation tool](http://matthewlein.com/ceaser/) by [@matthewlein](http://twitter.com/matthewlein)
+A compass extension based on [caesar css easing animation tool](http://matthewlein.com/ceaser/) by [@matthewlein](http://twitter.com/matthewlein)
 This extension provides transitions based on the classic Penner equations from Flash and jQuery.
 
 
